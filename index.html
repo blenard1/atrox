@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATROX Solutions</title>
+    <title>ATROX SOLUTIONS</title>
     <link rel="stylesheet" href="style.css" />
     <script src="../custom-scripts.js" defer></script>
   </head>
@@ -11,19 +12,18 @@
       <!-- Header Start -->
       <header>
         <nav class="nav container">
-          <h2 class="nav_logo"><a href="#">ATROX Solutions</a></h2>
+          <h2 class="nav_logo"><a href="#">ATROX SOLUTIONS</a></h2>
 
-          <ul class="menu_items" id="menu_items">
-            <li><a href="index.html" class="nav_link">Startseite</a></li>
-            <li><a href="About.html" class="nav_link">Über uns</a></li>
-            <li><a href="Service.html" class="nav_link">Service</a></li>
-            <li><a href="Contact.html" class="nav_link">Kontakt</a></li>
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">About</a></li>
+            <li><a href="#" class="nav_link">Service</a></li>
+            <li><a href="#" class="nav_link">Project</a></li>
+            <li><a href="#" class="nav_link">Contact</a></li>
           </ul>
-          <img src="images/bars.svg" alt="menu icon" id="menu_toggle_open" />
-          <img src="images/times.svg" alt="close icon" id="menu_toggle_close" class="hide" />
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
         </nav>
-        
-        
       </header>
       <!-- Header End -->
 
@@ -31,19 +31,11 @@
       <section class="hero">
         <div class="row container">
           <div class="column">
-            <p>
-              Willkommen bei ATROX Solutions. Ihr Partner für umfassende
-              Geschäftsverbesserungen, ATROX Solutions widmet sich der Steigerung
-              Ihres Unternehmens auf neue Höhen durch eine umfassende Palette von
-              Dienstleistungen.
-            </p>
+            <h2> The only solution <br />to radiply grow your business</h2>
+            <p>ATROX SOLUTIONS is your all-in-one partner dedicated to propelling your business to new heights. We offer a full spectrum of services designed to cater to every facet of your enterprise, ensuring seamless integration and exceptional performance across all platforms. Whether you're a startup or an established entity, our expertise transforms your vision into reality with precision and excellence!</p>
             <div class="buttons">
-              <a href="About.html">
-                <button class="btn">Weiterlesen</button>
-              </a>
-              <a href="Contact.html">
-                <button class="btn">Kontaktiere Uns</button>
-              </a>
+              <button class="btn">Read More</button>
+              <button class="btn">Contact Us</button>
             </div>
           </div>
           <div class="column">
@@ -57,26 +49,10 @@
 
     <script>
       const header = document.querySelector("header");
-      const menuItems = document.getElementById("menu_items");
-      const menuToggleOpen = document.getElementById("menu_toggle_open");
-      const menuToggleClose = document.getElementById("menu_toggle_close");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
 
-      function toggleMenu() {
-        menuItems.classList.toggle("showMenu");
-        menuToggleOpen.classList.toggle("hide");
-        menuToggleClose.classList.toggle("hide");
-      }
-
-      menuToggleOpen.addEventListener("click", toggleMenu);
-      menuToggleClose.addEventListener("click", toggleMenu);
-
-      // Add responsive behavior
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 860) {
-          menuItems.classList.remove("showMenu");
-          menuToggleOpen.classList.remove("hide");
-          menuToggleClose.classList.add("hide");
-        }
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
       });
     </script>
   </body>
