@@ -170,3 +170,64 @@ a {
     padding: 10px 16px;
   }
 }
+/* About Us */
+.about {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Ensure it fits the whole viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.about p {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Services */
+.services {
+  padding: 80px 20px;
+  background-color: #fff;
+  min-height: 100vh; /* Ensure it fits the whole viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.services .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+.services li {
+  margin-bottom: 40px;
+}
+.services h3 {
+  font-size: 24px;
+  color: #6610f2;
+  margin-bottom: 10px;
+}
+.services p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
