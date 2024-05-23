@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ATROX SOLUTIONS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="index.html">ATROX SOLUTIONS</a></h2>
+                <ul class="menu_items">
+                    <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="about.html" class="nav_link">About</a></li>
+                    <li><a href="services.html" class="nav_link">Service</a></li>
+                    <li><a href="index.html#projects" class="nav_link">Project</a></li>
+                    <li><a href="index.html#contact" class="nav_link">Contact</a></li>
+                </ul>
+                <img src="images/bars.svg" alt="menuicon" id="menu_toggle" />
+            </nav>
+        </header>
+
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Atrox Solutions, we are committed to being the cornerstone of your business success. With a passion for innovation and excellence, our team of experienced professionals provides comprehensive services that cover all aspects of your business needs. From cutting-edge website development and impactful digital marketing strategies to robust IT solutions and strategic business consulting, we ensure your business operates smoothly and achieves its highest potential. We believe in building lasting partnerships, delivering tailored solutions, and driving measurable results that align with your unique goals.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+</body>
+</html>
