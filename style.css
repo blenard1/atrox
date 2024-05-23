@@ -173,7 +173,7 @@ a {
 /* About Us */
 .about {
   padding: 80px 20px;
-  background-color: #f8f9fa;
+  background-color: #6610f2;
   min-height: 100vh; /* Ensure it fits the whole viewport height */
   display: flex;
   align-items: center;
@@ -187,18 +187,18 @@ a {
 .about h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 .about p {
   font-size: 20px;
-  color: #666;
+  color: #ffffff;
   line-height: 1.5;
 }
 
 /* Services */
 .services {
   padding: 80px 20px;
-  background-color: #fff;
+  background-color: #6610f2;
   min-height: 100vh; /* Ensure it fits the whole viewport height */
   display: flex;
   align-items: center;
@@ -212,7 +212,7 @@ a {
 .services h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 .services ul {
   list-style: none;
@@ -223,11 +223,11 @@ a {
 }
 .services h3 {
   font-size: 24px;
-  color: #6610f2;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .services p {
   font-size: 18px;
-  color: #666;
+  color: #ffffff;
   line-height: 1.6;
 }
