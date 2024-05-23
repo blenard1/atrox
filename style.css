@@ -185,3 +185,14 @@ a {
       height: auto !important;
   }
 }
+.menu {
+  display: none; /* Or however you want to initially hide the menu */
+}
+
+.showMenu {
+  display: block; /* Or however you want to show the menu */
+}
+
+.hide {
+  display: none;
+}
