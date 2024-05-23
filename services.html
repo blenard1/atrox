@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - ATROX SOLUTIONS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="index.html">ATROX SOLUTIONS</a></h2>
+                <ul class="menu_items">
+                    <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="about.html" class="nav_link">About</a></li>
+                    <li><a href="services.html" class="nav_link">Service</a></li>
+                    <li><a href="index.html#projects" class="nav_link">Project</a></li>
+                    <li><a href="index.html#contact" class="nav_link">Contact</a></li>
+                </ul>
+                <img src="images/bars.svg" alt="menuicon" id="menu_toggle" />
+            </nav>
+        </header>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>
+                        <h3>Website Development and Design</h3>
+                        <p>Custom website design, responsive development, e-commerce solutions, and ongoing maintenance to ensure your online presence is always at its best.</p>
+                    </li>
+                    <li>
+                        <h3>Digital Marketing</h3>
+                        <p>SEO and SEM strategies, social media management, content marketing, and personalized email marketing campaigns to drive engagement and growth.</p>
+                    </li>
+                    <li>
+                        <h3>Branding and Strategy</h3>
+                        <p>Brand identity creation, market research, competitive analysis, and business consulting to position your business strategically and effectively.</p>
+                    </li>
+                    <li>
+                        <h3>IT Solutions</h3>
+                        <p>Custom software development, cloud services, cybersecurity measures, and reliable technical support to enhance efficiency and security.</p>
+                    </li>
+                    <li>
+                        <h3>Customer Relationship Management</h3>
+                        <p>CRM integration, data analytics, and customer support solutions to improve interactions and satisfaction with your customers.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+</body>
+</html>
