@@ -176,3 +176,12 @@ a {
     padding: 10px 16px;
   }
 }
+@media(max-width: 767px) {
+  .navigation-in {
+      height: auto;
+  }
+
+  #navigation {
+      height: auto !important;
+  }
+}
