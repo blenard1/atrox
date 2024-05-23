@@ -103,14 +103,18 @@ a {
   z-index: 10;
   position: relative;
 }
-#menu_toggle {
+#menu_toggle_open,
+#menu_toggle_close {
   display: none;
 }
 
-/* Reponsive */
-@media (width < 860px) {
-  #menu_toggle {
+/* Responsive */
+@media (max-width: 860px) {
+  #menu_toggle_open,
+  #menu_toggle_close {
     display: block;
+    width: 30px;
+    cursor: pointer;
   }
   .nav {
     padding: 0 20px;
@@ -131,14 +135,16 @@ a {
   .showMenu .menu_items {
     left: 0;
   }
-  a {
+  .menu_items a {
     color: #333;
+    margin-bottom: 20px;
   }
-  #menu_toggle {
-    width: 20px;
-    cursor: pointer;
+  #menu_toggle_open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
-  .menu_items #menu_toggle {
+  #menu_toggle_close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -156,7 +162,7 @@ a {
   }
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
   .hero {
     padding-top: 80px;
   }
