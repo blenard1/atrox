@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATROX solutions</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">ATROX Solutions</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="index.html" class="nav_link">Startseite</a></li>
+            <li><a href="About.html" class="nav_link">Über uns</a></li>
+            <li><a href="Service.html" class="nav_link">Service</a></li>
+            <li><a href="Contact.html" class="nav_link">Kontakt</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            
+            <p>
+              Willkommen bei ATROX Solutions. Ihr Partner für umfassende Geschäftsverbesserungen, ATROX Solutions widmet sich der Steigerung Ihres Unternehmens auf neue Höhen durch eine umfassende Palette von Dienstleistungen.
+              
+              </p>
+            <div class="buttons">
+              <a href="About.html">
+
+                <button class="btn">Weiterlesen</button>
+              </a>
+              <a href="Contact.html">
+                <button class="btn">Kontaktiere Uns</button>
+              </a>
+              
+          
+            </div>
+          </div>
+          <div class="column">
+            <img src="images/hero.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        
+    const header = document.querySelector("header");
+    const menuToggleOpen = document.getElementById("menu_toggle_open");
+    const menuToggleClose = document.getElementById("menu_toggle_close");
+
+    function toggleMenu() {
+      header.classList.toggle("showMenu");
+    }
+
+    menuToggleOpen.addEventListener("click", toggleMenu);
+    menuToggleClose.addEventListener("click", toggleMenu);
+
+    // Add responsive behavior
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        header.classList.remove("showMenu");
+      }
+     });
+    </script>
+  </body>
+</html>
+
