@@ -235,7 +235,7 @@ a {
 
 /* Contact Form Styles */
 .contact {
-  padding: 50px 20px;
+  padding: 120px 20px 50px 20px;
   background-color: #6610f2;
 }
 
@@ -251,7 +251,8 @@ a {
 
 .contact h2 {
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .form_group {
