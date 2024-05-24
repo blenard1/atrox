@@ -46,12 +46,12 @@
     </main>
 
     <script>
-      const menuToggler = document.querySelector("#menu_toggle");
-      const menuItems = document.querySelector(".menu_items");
-
-      menuToggler.addEventListener("click", () => {
-        menuItems.classList.toggle("showMenu");
-      });
-    </script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+  
+        menuToggler.forEach(toggler => {
+          toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        });
+      </script>
 </body>
 </html>
