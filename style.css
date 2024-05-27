@@ -194,7 +194,20 @@ a {
   color: #ffffff;
   line-height: 1.5;
 }
-
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .about {
+    padding: 40px 10px;
+  }
+  .about h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .about p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
 /* Services */
 .services {
   padding: 80px 20px;
